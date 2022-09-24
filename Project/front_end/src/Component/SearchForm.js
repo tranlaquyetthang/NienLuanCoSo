@@ -5,7 +5,7 @@ function SearchForm(props) {
           &nbsp;
           <form>
             <div className="input-group mb-3">
-              <input type="text" className="form-control" onChange={(event)=>(console.log(event.target.value))} placeholder="Search..." />
+              <input type="password" className="form-control" onChange={(event)=>(console.log(event.target.value))} placeholder="Search..." />
               <div className="input-group-append">
                 <span className="input-group-text">
                 <FontAwesomeIcon className='textColor1' icon="search" />

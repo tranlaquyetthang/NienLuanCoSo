@@ -1,4 +1,5 @@
 import CardProduct1 from "./CardProduct1"
+import CardProduct from "./CardProduct"
 function Home(props) {
   return (
     <div className="container-fluid justify-content-center">
@@ -12,6 +13,13 @@ function Home(props) {
                 <CardProduct1 HinhAnh="https://www.notebookcheck.org/fileadmin/Notebooks/NVIDIA/Titan_RTX/Titan_RTX_18.jpg" TieuDe="Card đồ họa" LienKet="https:\\www.google.com" MieuTa="Chinh chiến mọi game yêu cầu đồ họa cao"/>
                 <CardProduct1 HinhAnh="https://3dcomputer.vn/uploads/images/products/bo-nho-ram/kingston-fury-beast-16gb-8gbx2-ddr4-bus-3200mhz/kit-ram-kingston-fury-beast-rgb-16gb.jpg" TieuDe="RAM" LienKet="https:\\www.google.com" MieuTa="Trải nghiệm mượt mà với bộ nhớ cực khủng"/>
                 <CardProduct1 HinhAnh="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/142681/Originals/bo-nguon-may-tinh-psu-tot-nhat-4.jpg" TieuDe="Nguồn máy tính" LienKet="!#" MieuTa="Năng lượng mạnh mẽ là sự cần thiết cho khởi đầu"/>
+                <CardProduct/>
+                <CardProduct/>
+                <CardProduct/>
+                <CardProduct/>
+                <CardProduct/>
+                <CardProduct/>
+                <CardProduct/>
               </div>
           </div>
   );
