@@ -9,12 +9,12 @@ import {
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import {faStar,faSearch,faCartPlus} from '@fortawesome/free-solid-svg-icons'
-import SignUp from './Component/SignUp'
-import Login from './Component/Login'
-import Footer from './Component/Footer'
-import Header from './Component/Header'
-import Error404 from './Component/Error404'
-import Home from './Component/Home';
+import SignUp from './Components/SignUp'
+import Login from './Components/Login'
+import Footer from './Components/Footer'
+import Header from './Components/Header'
+import Error404 from './Components/Error404'
+import Home from './Components/Home';
 library.add(fab,faStar,faSearch,faCartPlus)
 function App() {
   return (
