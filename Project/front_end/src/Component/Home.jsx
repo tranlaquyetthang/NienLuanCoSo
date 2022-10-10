@@ -4,6 +4,7 @@ function Home(props) {
   return (
     <div className="container-fluid justify-content-center">
               <div className='row'>
+                
                 <CardProduct1 HinhAnh="https://vinet.com.vn/wp-content/uploads/2022/04/ban-phim-custom-case.jpg" TieuDe="Bàn phím" LienKet="https:\\www.google.com" MieuTa="Chuyên cung cấp bàn phím cơ, bàn phím văn phòng, etc."/>
                 <CardProduct1 HinhAnh="https://cdn.shopify.com/s/files/1/1573/2927/products/uc_symm-wifi_white_4_solid.jpg?v=1648187166" TieuDe="Chuột" LienKet="https:\\www.google.com" MieuTa="Các thương hiệu nổi tiếng như Razor, etc. điều có ở đây"/>
                 <CardProduct1 HinhAnh="https://sc04.alicdn.com/kf/HTB1LVuPXUvrK1RjSszfq6xJNVXaZ.jpg" TieuDe="USB" LienKet="https:\\www.google.com" MieuTa="Samsung, Kingsdom,Lg, apple là những thương hiệu đối tác của chúng tôi"/>
