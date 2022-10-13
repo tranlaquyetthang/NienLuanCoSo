@@ -1,4 +1,7 @@
+import {Link } from 'react-router-dom';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 function SignIn(props) {
     return (
         <section className="vh-100">
@@ -41,7 +44,7 @@ function SignIn(props) {
                 </div>
                 <div className="text-center text-lg-start mt-4 pt-2">
                   <button type="button" className="btn btn-primary btn-lg" style={{paddingLeft: '2.5rem', paddingRight: '2.5rem'}}>Login</button>
-                  <p className="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!" className="link-danger">Register</a></p>
+                  <p className="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <Link to="/Register.html" className="link-danger">Register</Link></p>
                 </div>
               </form>
             </div>
