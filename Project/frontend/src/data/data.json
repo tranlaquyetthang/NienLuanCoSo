@@ -1,58 +1,72 @@
 {
     "SanPham": [
       {
+        "loai":"DienThoai",
         "tenSanPham":"Điện thoại hufkaf SamSung",
         "hinhAnh":"data:image/jpeg;base64,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"
       },
       {
+        "loai":"Laptop",
         "tenSanPham":"Laptop qfhuqwr triệu",
         "hinhAnh":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1f_PuWY_rWFzaTe_udGvojBra7BRJG2v2Xw&usqp=CAU"
       },
       {
+        "loai":"DienThoai",
         "tenSanPham":"Điện thoại SamSung",
         "hinhAnh":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ-egFVoLN83nhTli1b5G2Y-Vm6QWQWwk57w&usqp=CAU"
       },
       {
+        "loai":"Laptop",
         "tenSanPham":"Laptop 12sfgwr triệu",
         "hinhAnh":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMN2dnCm5i1h54nvcuIfFAe3PSDmhj6y4yIQ&usqp=CAU"
       },
       {
-        "tenSanPham":"Điện thoạifssf SamSung",
+        "loai":"DienThoai",
+        "tenSanPham":"Điện thoạifssf Nokia",
         "hinhAnh":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpLaMG1Ekd_V2LGcpSx-b189Y6TNxslRNKaw&usqp=CAU"
       },
       {
+        "loai":"Laptop",
         "tenSanPham":"Laptop 1a2 triệu",
         "hinhAnh":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHt7En0r_l_uR11qU5vCPLH8D2MlQkJa0mZQ&usqp=CAU"
       },
       {
+        "loai":"DienThoai",
         "tenSanPham":"Điện thoại 2ad SamSung",
         "hinhAnh":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQieG9pZD-dffsbiK1vCzOt9BZsUGhNtcwbfA&usqp=CAU"
       },
       {
+        "loai":"Laptop",
         "tenSanPham":"Laptop 121 triệu",
         "hinhAnh":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3mjjcSGc1brIm91KsJ59FV91LqgXnIBZw2w&usqp=CAU"
       },
       {
+        "loai":"DienThoai",
         "tenSanPham":"Điện thoại 6 SamSung",
         "hinhAnh":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWFx817FUCq3bvTY-59HiSQU-4sEbrTeXibY42vnUkRmfkudzjwoOeefWlqqfs6l1TRps&usqp=CAU"
       },
       {
+        "loai":"Laptop",
         "tenSanPham":"Laptop 15 triệu",
         "hinhAnh":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZTS5nAV2sbNig3E42xUsMU-sdnFSPQTrxMCmb3JhhGAtPK8tw-E0TzZzbG7VSmqQq-ww&usqp=CAU"
       },
       {
+        "loai":"DienThoai",
         "tenSanPham":"Điện thoại 2 SamSung",
         "hinhAnh":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa9IL1La2AyWgnFIbTeKs2B0jwNM4m07kifMKgve9Rq5gUrtGj1JV7ZVZGIvqsFr5HEv8&usqp=CAU"
       },
       {
+        "loai":"Laptop",
         "tenSanPham":"Laptop 14 triệu",
         "hinhAnh":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQroczBGTkXnR0Bl0FDfoVZulguBdXxy-hrdA&usqp=CAU"
       },
       {
+        "loai":"DienThoai",
         "tenSanPham":"Điện thoại 1 SamSung",
         "hinhAnh":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbgL3Duin1E8HZ8OXk9PmAKT2XP4N6lWqCwg&usqp=CAU"
       },
       {
+        "loai":"Laptop",
         "tenSanPham":"Laptop 13 triệu",
         "hinhAnh":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEWM4u5nPImuD4tQePNxo5ATrBazCGhDT7Pg&usqp=CAU"
       }
