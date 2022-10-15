@@ -15,6 +15,7 @@ import Home from "./Components/Home/Home"
 import Footer from "./Components/Public/Footer"
 import SignIn from "./Components/SignIn/SignIn"
 import Register from "./Components/Register/Register"
+import ProductDetails from "./Components/Products/ProductDetails"
 
 library.add(faSearch,faCartShopping,faLock,faKey,faEnvelope,faSignIn,faFacebookF,faTwitter,faLinkedinIn,faUser)
 
@@ -35,6 +36,7 @@ function App() {
             <Route exact path="/" element={<Home kiemTra={valueTimKiem} searchParam={searchParam}/>} />
             <Route path="/SignIn.html" element={<SignIn/>} />
             <Route path="/Register.html" element={<Register/>} />
+            <Route path="/products/:slug-:productId.html" element={<ProductDetails/>}/>
           </Routes>
           <Footer/>
       </Router>

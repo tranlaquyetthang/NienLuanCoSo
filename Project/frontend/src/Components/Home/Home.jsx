@@ -4,6 +4,45 @@ import data from "../../data/data"
 import CartSanPham from "./CartSanPham";
 
 function Home(props) {
+
+    //tao slug
+        function ChangeToSlug(e)
+        {
+            var title, slug;
+        
+            //Lấy text từ thẻ input title 
+            title = e
+        
+            //Đổi chữ hoa thành chữ thường
+            slug = title.toLowerCase();
+        
+            //Đổi ký tự có dấu thành không dấu
+            slug = slug.replace(/á|à|ả|ạ|ã|ă|ắ|ằ|ẳ|ẵ|ặ|â|ấ|ầ|ẩ|ẫ|ậ/, 'a');
+            slug = slug.replace(/é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ/, 'e');
+            slug = slug.replace(/i|í|ì|ỉ|ĩ|ị/, 'i');
+            slug = slug.replace(/ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ/, 'o');
+            slug = slug.replace(/ú|ù|ủ|ũ|ụ|ư|ứ|ừ|ử|ữ|ự/, 'u');
+            slug = slug.replace(/ý|ỳ|ỷ|ỹ|ỵ/, 'y');
+            slug = slug.replace(/đ/, 'd');
+            //Xóa các ký tự đặt biệt
+            slug = slug.replace(/\`|\~|\!|\@|\#|\||\$|\%|\^|\&|\*|\(|\)|\+|\=|\,|\.|\/|\?|\>|\<|\'|\"|\:|\;|_/gi, '');//eslint-disable-line
+            //Đổi khoảng trắng thành ký tự gạch ngang
+            slug = slug.replace(/ /gi, '-');
+            //Đổi nhiều ký tự gạch ngang liên tiếp thành 1 ký tự gạch ngang
+            //Phòng trường hợp người nhập vào quá nhiều ký tự trắng
+            slug = slug.replace(/\-\-\-\-\-/gi, '-');//eslint-disable-line
+            slug = slug.replace(/\-\-\-\-/gi, '-');//eslint-disable-line
+            slug = slug.replace(/\-\-\-/gi, '-');//eslint-disable-line
+            slug = slug.replace(/\-\-/gi, '-');//eslint-disable-line
+            //Xóa các ký tự gạch ngang ở đầu và cuối
+            slug = '@' + slug + '@';
+            slug = slug.replace(/\@\-|\-\@|\@/gi, '');//eslint-disable-line
+            //In slug ra textbox có id “slug”
+            return slug
+        }
+    //tao slug
+
+
     //tim kiem san pham
     const [items, setItems] = useState([])
 
@@ -73,8 +112,8 @@ function Home(props) {
                 </div>
                 <div className="col-md-10 p-2 col-12">
                     <div className="row">
-                    {search(items).map((item,id) => (
-                                                        <CartSanPham key={id} HinhAnh={item.hinhAnh} NoiDung={item.tenSanPham}/>))
+                    {search(items).map((item) => (
+                                                        <CartSanPham key={item.id} LienKet={`/products/${ChangeToSlug(item.tenSanPham)}-${item.id}.html`} HinhAnh={item.hinhAnh} NoiDung={item.tenSanPham}/>))
                     }  
                     </div>
                 </div>   
